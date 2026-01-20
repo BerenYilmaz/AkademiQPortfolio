@@ -1,6 +1,6 @@
 ﻿# 🚀 Dynamic Portfolio & Admin Panel
 
-![Project Banner](https://via.placeholder.com/1000x300?text=Portfolio+Project+Banner) 
+
 <div align="center">
 
   ![.NET Core](https://img.shields.io/badge/.NET%20Core-8.0-purple?style=for-the-badge&logo=dotnet)
@@ -30,7 +30,7 @@ Projenin temel amacı, sadece çalışan bir uygulama geliştirmek değil; var o
 <img src="Images/admin-panel.png" alt="Admin Panel Ekran Görüntüsü" width="100%">
 
 <h3>Kullanıcı Arayüzü (UI)</h3>
-<img src="Images/ui-screenshot.png" alt="Kullanıcı Arayüzü Ekran Görüntüsü" width="100%">
+<img src="Images/ui-screenshot .png" alt="Kullanıcı Arayüzü Ekran Görüntüsü" width="100%">
 ---
 
 ## 🛠️ Teknolojiler (Tech Stack)
@@ -61,7 +61,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
 1.  **Projeyi Klonlayın**
     ```bash
-    git clone [https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ.git](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ.git)
+    git clone [https://github.com/BerenYilmaz/AkademiQPortfolio.git](https://github.com/BerenYilmaz/AkademiQPortfolio.git)
     ```
 
 2.  **Veritabanı Bağlantısı**
@@ -89,6 +89,5 @@ Bu projenin geliştirilmesindeki teknik rehberlikleri için **Murat Yücedağ** 
 
 ## 📞 İletişim
 
-* **Geliştirici:** [Adınız Soyadınız]
-* **LinkedIn:** [Linkedin Profil Linkiniz]
-* **Email:** [E-posta adresiniz]
+* **Geliştirici:** Beren Yılmaz
+* **Email:** berennyilmaz03@gmail.com
