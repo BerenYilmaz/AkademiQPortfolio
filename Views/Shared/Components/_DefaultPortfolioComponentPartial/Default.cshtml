@@ -1,0 +1,43 @@
+﻿@model List<Work>
+
+<section id="section6">
+    <div class="container">
+        <h2>Projelerim ve Çalışmalarım</h2>
+        <div class="portfolio-wrapper">
+            <div id="portfolio-filters" class="portfolio-filters">
+                <button class="button solid-button white-purple small" data-filter="*">Hepsini Göster</button>
+                <button class="button solid-button white-purple small" data-filter=".Web">Web Uygulaması</button>
+                <button class="button solid-button white-purple small" data-filter=".Siber">Siber Güvenlik</button>
+                <button class="button solid-button white-purple small" data-filter=".Gömülü">Gömülü Sistemler Yazılımı</button>
+            </div>
+
+            <div id="portfolio" class="portfolio">
+                @if (Model != null && Model.Count > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <div class="item @item.SubTitle">
+                            <img src=@item.ImageUrl alt="alt text" class="img-responsive">
+                            <a href="#" class="overlay">
+                                <div class="background"></div>
+                                <div class="meta">
+                                    <span class="title">@item.Title</span>
+                                    <span class="category">@item.SubTitle</span>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                }
+                else
+                {
+                    @* Eğer liste boşsa bu yazı görünecek *@
+                    <p style="text-align:center; padding:20px; color:gray;">Henüz görüntülenecek bir proje bulunamadı.</p>
+                }
+            </div>
+
+            <div class="portfolio-load-more">
+                <a href="#" class="button solid-button white icon-right">Proje Ekleyin<i class="md-refresh"></i></a>
+            </div>
+        </div>
+    </div>
+</section>

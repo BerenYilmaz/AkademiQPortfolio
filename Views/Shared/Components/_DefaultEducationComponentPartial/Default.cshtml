@@ -1,0 +1,83 @@
+﻿@model List<Education>
+
+	<style>
+    /* Zaman çizelgesi konteyneri */
+    .education-container {
+        padding: 20px 0;
+        position: relative;
+    }
+
+    /* Her bir eğitim kartı */
+    .edu-item {
+        position: relative;
+        margin-bottom: 25px;
+        padding-left: 30px;
+        border-left: 3px solid #7d5fff; /* Mor çizgi */
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: block;
+        overflow: hidden; /* İç içe geçmeyi önler */
+    }
+
+    /* Çizgi üzerindeki yuvarlak */
+    .edu-item::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 20px;
+        width: 16px;
+        height: 16px;
+        background: #7d5fff;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }
+
+    .edu-date {
+        font-weight: bold;
+        color: #7d5fff;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .edu-title {
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #888;
+        display: block;
+    }
+
+    .edu-dept {
+        margin: 5px 0 0 0;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+
+<section id="section5">
+    <div class="container">
+        <h2>Eğitim Bilgilerim</h2>
+        <div class="education-container clearfix">
+            @foreach (var item in Model)
+            {
+                if (!string.IsNullOrEmpty(item.Title))
+                {
+                    <div class="edu-item">
+                        <span class="edu-date">@item.EducationDate</span>
+                        <span class="edu-title">@item.Title</span>
+                        <h4 class="edu-dept">@item.Department</h4>
+                    </div>
+                }
+                
+            }
+        </div>
+	</div> <!-- end .container -->
+</section>

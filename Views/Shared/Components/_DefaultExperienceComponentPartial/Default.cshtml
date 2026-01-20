@@ -1,0 +1,47 @@
+﻿@model List<Experience>
+
+<section id="section4">
+	<div class="container">
+		<h2>Deneyimlerim</h2>
+		<div class="experience-timeline">
+			@foreach (var item in Model)
+			{
+			<div class="experience-block clearfix">
+				<div class="meta">
+					<span class="year">@item.WorkDate</span>
+					<span class="company">@item.CompanyName</span>
+				</div> <!-- end .meta -->
+				<div class="content">
+					<h5>@item.Title</h5>
+					<p>@item.Desription</p>
+				</div> <!-- end .content -->
+				<div class="icon">
+					<i class="@item.IconUrl"></i>
+				</div> <!-- end .icon -->
+				<div class="line"></div>
+			</div> <!-- end .experience-block -->
+			}
+			
+		</div> <!-- end .experience-timeline -->
+		<!-- Testimonials -->
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="testimonial-slider owl-carousel">
+					<div>
+						<div class="image"><img src="/sility-20260116T153025Z-3-001/sility/images/Ataturk1.png" alt="alt text"></div>
+						<div class="sep"></div>
+						<p>"Zafer, ‘Zafer benimdir’ diyebilenindir. Başarı ise, ‘Başaracağım’ diye başlayarak sonunda ‘Başardım’ diyebilenindir."</p>
+						<span class="author">Gazi Mustafa Kemal Atatürk</span>
+					</div>
+					<div>
+						<div class="image"><img src="/sility-20260116T153025Z-3-001/sility/images/Ataturk1930s.jpg" alt="alt text"></div>
+						<div class="sep"></div>
+						<p>"Hiçbir şeye ihtiyacımız yok, yalnız bir şeye ihtiyacımız vardır; çalışkan olmak! "</p>
+						<span class="author">Gazi Mustafa Kemal Atatürk</span>
+					</div>
+				</div> <!-- end .testimonial-slider -->
+			</div> <!-- end .col-sm-8 -->
+		</div> <!-- end .row -->
+
+	</div> <!-- end .container -->
+</section>
